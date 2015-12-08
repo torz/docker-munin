@@ -1,0 +1,7 @@
+munin:
+    build: .
+    privileged: true
+    ports:
+        - 127.0.0.1:48080:80
+    volumes:
+        - /srv/data/munin/data:/var/lib/munin
